@@ -1,0 +1,65 @@
+﻿Build started 18-Jul-13 11:01:24 AM.
+     1>Project "D:\Code\SAD\SAD_v3.1\SAD_v3.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "D:\Code\SAD\x64\Release\".
+       InitializeBuildStatus:
+         Creating "x64\Release\SAD_v3.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /I. /FIcuda_runtime.h /c D:\Code\SAD\SAD_v3.1\SAD.cu 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file SAD.cu...
+         cmd.exe /C "C:\Users\vanchi\AppData\Local\Temp\tmp80120eb8f7494241b47d5c985857f32c.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"    --keep-dir "x64\Release" -maxrregcount=0  --machine 64 --compile      -Xcompiler "/EHsc /nologo /Od /Zi  /MD  " -o "x64\Release\SAD.cu.obj" "D:\Code\SAD\SAD_v3.1\SAD.cu"
+         
+         D:\Code\SAD\SAD_v3.1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"    --keep-dir "x64\Release" -maxrregcount=0  --machine 64 --compile      -Xcompiler "/EHsc /nologo /Od /Zi  /MD  " -o "x64\Release\SAD.cu.obj" "D:\Code\SAD\SAD_v3.1\SAD.cu" 
+         SAD.cu
+     1>D:/Code/SAD/SAD_v3.1/SAD.cu(76): warning : variable "result" was declared but never referenced
+         
+         tmpxft_00000e10_00000000-0_SAD.cudafe1.gpu
+         tmpxft_00000e10_00000000-5_SAD.cudafe2.gpu
+         SAD.cu
+     1>D:/Code/SAD/SAD_v3.1/SAD.cu(76): warning : variable "result" was declared but never referenced
+         
+         tmpxft_00000e10_00000000-0_SAD.cudafe1.cpp
+         tmpxft_00000e10_00000000-11_SAD.ii
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt HeatConduction.cpp SAD.cpp TestMain.cpp
+         HeatConduction.cpp
+         SAD.cpp
+         TestMain.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Release\SAD_v3.exe.embed.manifest.res" x64\Release\SAD_v3_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Code\SAD\x64\Release\SAD_v3.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\SAD_v3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Code\SAD\x64\Release\SAD_v3.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Code\SAD\x64\Release\SAD_v3.lib" /MACHINE:X64 x64\Release\SAD.cu.obj
+         x64\Release\SAD_v3.exe.embed.manifest.res
+         x64\Release\HeatConduction.obj
+         x64\Release\SAD.obj
+         x64\Release\TestMain.obj
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+         Generating code
+         Finished generating code
+         SAD_v3.vcxproj -> D:\Code\SAD\x64\Release\SAD_v3.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"x64\Release\SAD_v3.exe.embed.manifest" /manifest x64\Release\SAD_v3.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         SAD_v3.vcxproj -> D:\Code\SAD\x64\Release\SAD_v3.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\cudart*.dll" "D:\Code\SAD\x64\Release\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\cudart*.dll" "D:\Code\SAD\x64\Release\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\cudart*.dll" "D:\Code\SAD\x64\Release\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\cudart32_42_9.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\cudart64_42_9.dll
+                 2 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\SAD_v3.unsuccessfulbuild".
+         Touching "x64\Release\SAD_v3.lastbuildstate".
+     1>Done Building Project "D:\Code\SAD\SAD_v3.1\SAD_v3.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.88
